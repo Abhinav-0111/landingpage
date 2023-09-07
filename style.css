@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200;1,300&family=Mulish:wght@300&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;1,100&family=Rubik:wght@300&family=Slabo+27px&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dedede;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 70%;
+    background-color: white;
+    position: relative;
+    height: 80%;
+    box-shadow: 0px 0px 50px -1px rgb(0, 0, 0, .5);
+    padding: 0px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: .1s linear;
+}
+
+header .logo {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 250px;
+    height: 380px;
+    background-color: #282828;
+    transition: 1s linear;
+}
+
+header .logo h1 {
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header .logo img {
+    width: 320px;
+    margin: 30px 0px 0px -35px;
+    filter: drop-shadow(0px 0px 20px rgb(0, 0, 0, .6));
+}
+
+
+header nav {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+header nav .menu {
+    font-size: 25px;
+    color: black;
+}
+
+
+header nav .right-menu {
+    display: flex;
+    align-items: center;
+}
+
+header nav .right-menu ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav .right-menu ul li {
+    padding: 3px 10px;
+}
+
+header nav .right-menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: .3s linear;
+    text-transform: uppercase;
+    position: relative;
+}
+
+header nav .right-menu ul li a::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #bc1313;
+    border-radius: 50%;
+    bottom: -5px;
+    left: 45%;
+    opacity: 0;
+    transition: .3s linear;
+}
+
+header nav .right-menu .user-card {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+header nav .right-menu .user-card .bi-cart3 {
+    font-size: 20px;
+}
+
+
+header nav .right-menu .user-card .user {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+    position: relative;
+}
+
+header nav .right-menu .user-card .user img {
+    width: 100%;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+
+header nav .right-menu .user-card .user::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #bc1313;
+    top: 0px;
+    right: 0;
+}
+
+
+header nav .right-menu ul li a:hover:before {
+    opacity: 1;
+}
+
+header nav .right-menu ul li a:hover {
+    color: #bc1313;
+}
+
+
+header .left-menu {
+    width: 20px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .left-menu a {
+    margin: 30px 0;
+    text-decoration: none;
+    padding: 0px 5px;
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    transition: all .3s linear;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+
+}
+
+header .left-menu a:hover {
+    color: #bc1313;
+}
+
+
+header section {
+    width: 97%;
+    height: 90%;
+
+}
+
+header section .content {
+    position: relative;
+    left: 420px;
+    margin-top: 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: 3s linear;
+}
+
+header section .content h1 {
+    font-size: 45px;
+    transition: 1s linear;
+}
+
+header section .content p {
+    font-size: 13px;
+    width: 350px;
+    font-weight: 600;
+    word-break: break-all;
+}
+
+header section .content .price-order {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+header section .content .price-order .price {
+    margin-top: 10px;
+}
+
+header section .content .price-order .price h2 {
+    font-size: 20px;
+    color: #bc1313;
+    line-height: 18px;
+}
+
+
+header section .content .price-order .price p {
+    font-size: 10px;
+    width: 80px;
+    text-transform: uppercase;
+}
+
+header section .content .price-order a {
+    text-decoration: none;
+    padding: 4px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 35px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+header section .content .price-order a:hover {
+    background: #bc1313;
+}
+
+header section .cards {
+    width: 75%;
+    height: 180px;
+    position: relative;
+    top: 12%;
+    left: 10%;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+    scroll-behavior: smooth;
+    transition: 1s linear;
+}
+
+header section .cards::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+header section .cards .card {
+    position: relative;
+    min-width: 155px;
+    min-height: 155px;
+    border: 1px solid black;
+    margin-right: 13px;
+    background-color: #282828;
+    border-radius: 50px 10px 10px 10px;
+}
+
+header section .cards .card:nth-last-child(1) {
+    margin: 0;
+}
+
+header section .card .dis {
+    width: 80px;
+    position: relative;
+    top: -6px;
+    left: -6px;
+}
+
+header section .card .strem {
+    width: 62px;
+    height: 82px;
+    position: absolute;
+    top: -35px;
+    left: -5px;
+}
+
+header section .card h4 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+header section .card h5 {
+    color: white;
+    font-size: 15px;
+    font-family: 500;
+    padding: 2px 10px 0px 10px;
+    margin-top: -8px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+header section .card p {
+    color: rgba(173, 169, 169, 0.987);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+header section .card .rating {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px;
+    color: white;
+}
+
+header section .card .rating h6 {
+    font-size: 14px;
+}
+
+header section .social-media {
+    position: relative;
+    width: 100%;
+    top: 9.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s linear;
+}
+
+header section .social-media .btns {
+    margin-left: 130px;
+}
+
+header section .social-media .btns .bi {
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header section .social-media .btns .bi:hover {
+    color: rgb(0, 0, 0, .5);
+}
+
+header section .social-media .icon {
+    display: flex;
+    align-items: center;
+}
+
+header section .social-media .icon a {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #282828;
+    transition: .3s linear;
+}
+
+header section .social-media .icon a:hover {
+    color: black;
+}
+
+@media screen and (max-width:1219px) {
+    header {
+        width: 90%;
+
+    }
+}
+
+@media screen and (max-width:938px) {
+    header {
+        width: 95%;
+    }
+
+    header section .content {
+
+        left: 351px;
+
+    }
+}
+
+@media screen and (max-width:923px) {
+    header section .content {
+
+        left: 351px;
+
+    }
+}
+
+@media screen and (max-width:872px) {
+
+    header {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:792px) {
+
+    header nav .right-menu ul li {
+        padding: 2px 5px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    header nav .right-menu ul {
+
+        position: absolute;
+        top: 20%;
+        flex-direction: column;
+        width: 15px;
+        right: 17px;
+    }
+
+    header nav .right-menu ul li {
+        padding: 30px 10px;
+        transform: rotate(90deg);
+    }
+
+    header section .content {
+        top: 37%;
+        left: 24%;
+    }
+
+    header .logo {
+        left: 33.5%;
+    }
+
+    header section .cards {
+        top: 38%;
+    }
+
+    header section .social-media {
+        top: 37.5%;
+    }
+
+    header section .social-media .btns {
+        margin-left: 97px;
+    }
+}
+
+@media screen and (max-width:728px) {
+    header section {
+        width: 96%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width:594px) {
+    header .logo {
+        left: 21.5%;
+    }
+
+    header section .content {
+        top: 37%;
+        left: 13%;
+    }
+
+    header section {
+        width: 88%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width:493px) {
+    header section .content h1 {
+        font-size: 36px;
+        transition: 1s linear;
+    }
+
+    header section .content p {
+        font-size: 10px;
+        width: 257px;
+    }
+
+    header .logo {
+        width: 236px;
+    }
+
+    header .logo img {
+        width: 286px;
+        margin: 63px 0px 0px -28px;
+        filter: drop-shadow(0px 0px 20px rgb(0, 0, 0, .6));
+    }
+}
+
+@media screen and (max-width:467px) {
+    header .logo {
+
+        width: 198px;
+
+    }
+
+    header .logo img {
+        width: 248px;
+        margin: 102px 0px 0px -28px;
+
+    }
+
+    header section .content h1 {
+        font-size: 30px;
+        transition: 1s linear;
+    }
+
+    header section .content p {
+        width: 207px;
+    }
+
+    header section .cards {
+        width: 62%;
+        left: 7%;
+    }
+    header section .social-media .btns {
+        margin-left: 48px;
+    }
+    header section .content .price-order a {
+       padding: 3px 14px;
+        margin-left: 15px;
+       
+    }
+}
